@@ -1,0 +1,15 @@
+:root {
+   --text-color: #686d77;
+   --primary-color: #459d7a;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 1.5;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
