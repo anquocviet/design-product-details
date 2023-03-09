@@ -64,20 +64,20 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                </p>
                <div class="product__price">
-                  <span class="current-price">$32</span>
-                  <span class="old-price">$42</span>
+                  <span class="product__price--big-primary">$32</span>
+                  <span>$42</span>
                </div>
                <p class="product__desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eveniet aperiam maiores asperiores
                   incidunt voluptas rem delectus nam non natus.
                </p>
                <div class="product__rating">
-                  <span><b>368</b> reviews</span>
-                  <span><b>823</b> sold</span>
-                  <span>
-                     <img src="./assets/images/Rating4_5.png" alt="Rating">
+                  <p><b>368</b> reviews</p>
+                  <p><b>823</b> sold</p>
+                  <p>
+                     <img class="rating-start" src="./assets/images/Rating4_5.png" alt="Rating">
                      <b>4.5</b>
-                  </span>
+                  </p>
                </div>
                <div class="product__commit">
                   <img src="./assets/images/Check-circle.png" alt="">
@@ -95,13 +95,19 @@
                   </select>
                </div>
                <div class="product__qty">
-                  <button><img src="./assets/images/Minus.png" alt="Minus"></button>
-                  <input type="text" value="1">
-                  <button><img src="./assets/images/Plus.png" alt="Plus"></button>
+                  <label for="qty">Quantity</label>
+                  <div class="product__qty-action">
+                     <button><img src="./assets/images/Minus.png" alt="Minus"></button>
+                     <input type="text" value="1" name="qty" id="qty">
+                     <button><img src="./assets/images/Plus.png" alt="Plus"></button>
+                  </div>
                </div>
                <div class="product__buy">
-                  <button>Add to bag</button>
-                  <button>Checkout</button>
+                  <button class="btn btn--outline">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                     Add to bag
+                  </button>
+                  <button class="btn btn--solid">Checkout</button>
                </div>
             </div>
          </div>
