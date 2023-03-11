@@ -1,5 +1,6 @@
 :root {
    --white: #fff;
+   --black: #323842;
    --text-color: #686d77;
    --primary-color: #459d7a;
 }
@@ -28,6 +29,10 @@ html {
    color: var(--primary-color);
 }
 
+body {
+   padding-bottom: 100px;
+}
+
 .btn--outline {
    border: 1px solid var(--primary-color);
 }
@@ -36,4 +41,24 @@ html {
    color: var(--white);
    background-color: var(--primary-color);
    border: 1px solid var(--primary-color);
+}
+
+.best-seller {
+   position: relative;
+}
+
+.best-seller::before {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   content: "Best seller";
+   width: 80px;
+   height: 30px;
+   border-radius: 16px;
+   background-color: #f6c870;
+   color: #c49040;
+   position: absolute;
+   top: 12px;
+   right: 8px;
 }
