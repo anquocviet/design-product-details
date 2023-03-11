@@ -309,16 +309,18 @@
 }
 
 .menu-info__item {
-   --width: 216px;
    position: relative;
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-   width: var(--width);
-   height: 52px;
-   font-size: 1.8rem;
-   color: var(--primary-color);
    border-radius: 4px;
+}
+
+.menu-info__item-link {
+   display: inline-block;
+   padding: 12px 0;
+   font-size: 1.8rem;
+   width: 216px;
+   text-decoration: none;
+   color: var(--primary-color);
+   text-align: center;
 }
 
 .menu-info__item + .menu-info__item::after {
@@ -338,33 +340,106 @@
 }
 
 .menu-info__item--active {
-   background-color: rgba(69, 157, 122, 0.2);
+   background-color: rgba(69, 157, 122, 0.3);
 }
 
-.menu-info__content {
+/* Benefits */
+.benefits {
    display: flex;
    justify-content: space-between;
    margin-top: 34px;
 }
 
-.menu-info__text {
+.benefits__text {
    width: 500px;
 }
 
-.menu-info__title {
+.benefits__title {
    font-size: 4rem;
    margin: 116px 0 0;
    color: var(--black);
 }
 
-.menu-info__text h2 {
+.benefits__text h2 {
    margin-bottom: 0;
    font-size: 2rem;
    color: var(--black);
 }
 
-.menu-info__text p {
+.benefits__text p {
    margin-top: 0;
    font-size: 1.5rem;
    color: var(--text-color);
+}
+
+/* Ingredients */
+.ingredients {
+   margin-top: 80px;
+}
+
+.ingredients h1 {
+   font-size: 4rem;
+   color: var(--black);
+}
+
+.ingredients__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 46px;
+   list-style: none;
+   padding-left: 0;
+}
+
+.ingredients img {
+   border-radius: 8px;
+   width: 100%;
+}
+
+.ingredients h2 {
+   font-size: 2.2rem;
+   color: var(--black);
+   margin-bottom: 0;
+}
+
+.ingredients p {
+   margin-top: 0;
+   color: var(--text-color);
+   font-size: 1.6rem;
+}
+
+.ingredients__show-more {
+   text-align: center;
+}
+
+.ingredients__btn-show-more {
+   width: 196px;
+}
+
+/* How to use */
+.htu {
+   position: relative;
+}
+
+.htu__title {
+   font-size: 4rem;
+   color: var(--black);
+}
+
+.htu__btn-play {
+   width: 176px;
+   height: 52px;
+   font-size: 1.8rem;
+   background-color: #181a20;
+   border-radius: 4px;
+   color: var(--white);
+   border: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.htu__btn-play i {
+   margin-left: 4px;
+   font-size: 1.6rem;
 }
