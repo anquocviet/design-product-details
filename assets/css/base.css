@@ -30,6 +30,11 @@ html {
    color: var(--primary-color);
 }
 
+.btn:hover {
+   cursor: pointer;
+   opacity: 0.8;
+}
+
 .btn--small-outline {
    height: 34px;
    min-width: 138px;
